@@ -87,7 +87,7 @@ alias fki="flatpak install flathub"
 swww() {
     command swww img --transition-type center --transition-fps 60 --transition-step 255 "$1"
 
-    ln -sf "$1" ~/.config/hypr/hyprlock/wallpaper/wallpaper.jpg
+    ln -sf "$1" ~/mydotfiles/hypr/hyprlock/wallpaper/wallpaper.jpg
 }
 
 
