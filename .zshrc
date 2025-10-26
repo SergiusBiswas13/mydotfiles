@@ -82,7 +82,6 @@ alias gp="git push"
 alias fks="flatpak search"
 alias fki="flatpak install flathub"
 
-# alias swww="swww img --transition-type center --transition-fps 60 --transition-step 255"
 
 swww() {
     command swww img --transition-type center --transition-fps 60 --transition-step 255 "$1"
@@ -93,12 +92,6 @@ swww() {
 
 alias yt='yt-dlp -f "bv*[height<=1080]+ba/b[height<=1080]" -S "vcodec:h264,res,acodec" -o "~/Videos/yt-videos/%(title)s.%(ext)s"'
 
-alias bluetoothstart="sudo systemctl enable bluetooth.service"
-alias waydroidstart="sudo systemctl start waydroid-container.service"
-alias waydroidstop="sudo systemctl stop waydroid-container.service"
-alias androidstart="waydroid session start"
-alias androidstop="waydroid session stop"
-alias androidshow="waydroid show-full-ui"
 
 # Shell integrations
 eval "$(fzf --zsh)"
@@ -110,4 +103,6 @@ eval "$(zoxide init --cmd cd zsh)"
 ## Completion scripts setup. Remove the following line to uninstall
 [[ -f /home/rius/.dart-cli-completion/zsh-config.zsh ]] && . /home/rius/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
+
+
 
