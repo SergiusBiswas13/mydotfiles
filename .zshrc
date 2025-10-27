@@ -82,16 +82,19 @@ alias gp="git push"
 alias fks="flatpak search"
 alias fki="flatpak install flathub"
 
+alias bluetoothstart="sudo systemctl enable bluetooth.service"
+alias bluetoothstop="sudo systemctl disable bluetooth.service"
 
 swww() {
-    command swww img --transition-type center --transition-fps 60 --transition-step 255 "$1"
+    command swww img --transition-type center --transition-fps 60 --transition-step 255 $HOME/Pictures/wallpaper/"$1"
 
-    ln -sf "$1" ~/mydotfiles/hypr/hyprlock/wallpaper/wallpaper.jpg
+    ln -sf $HOME/Pictures/wallpaper/"$1" ~/mydotfiles/hypr/hyprlock/wallpaper/wallpaper.jpg
 }
 
 
 alias yt='yt-dlp -f "bv*[height<=1080]+ba/b[height<=1080]" -S "vcodec:h264,res,acodec" -o "~/Videos/yt-videos/%(title)s.%(ext)s"'
 
+alias minecraft="flatpak run org.prismlauncher.PrismLauncher & disown"
 
 # Shell integrations
 eval "$(fzf --zsh)"
