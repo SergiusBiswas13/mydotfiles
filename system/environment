@@ -1,0 +1,9 @@
+#
+# This file is parsed by pam_env module
+#
+# Syntax: simple "KEY=VAL" pairs on separate lines
+#
+
+XDG_DATA_DIRS="/usr/share:/usr/local/share:/var/lib/flatpak/exports/share:/home/rius/.local/share/flatpak/exports/share"
+
+
