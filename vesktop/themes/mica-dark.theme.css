@@ -1,0 +1,47 @@
+/**
+ * @name Mica Dark
+ * @author Rius
+ * @version 1.0
+ * @description This is my edited version of the original Theme by @coolkie, I don't intend to steal the credit
+ * @source https://github.com/PL7963/Discord-Mica/blob/main/src/main.css
+ * @website http://github.com/PL7963/
+ * @invite mh5Tzm43m9
+ */
+
+@import url("https://discord-mica.pages.dev/src/main.css");
+
+ :root {
+  /*Dark mode*/
+  --dark-bg: transparent; /*rgba(240,185,190,0.113); to achieve screenshot looking*/
+  --dark-flyout: rgba(30,30,30);
+  --dark-accent: rgb(76, 194, 255);
+  --dark-accent-hovered: rgb(65, 163, 214); /*also disabled button*/
+  --dark-accent-font-color: black;
+  --dark-button: rgb(45,45,45);
+  --dark-button-border: rgb(60, 60, 60);
+  --dark-button-font-color: white;
+  --dark-background-accent: rgba(50,50,50,0.9);
+  --dark-status-panel: rgba(30,30,30,0.4);
+
+  /* Titlebar */
+  --custom-app-top-bar-height: calc(24px + var(--space-sm)); /* Set to 0 if you don't want to use Discord title-bar */
+  --title-bar-icon: flex; /* Set to none to remove icons */
+  }
+
+  /* Add black tint overlay for readability */
+ body::before {
+   content: "";
+   position: fixed;
+   inset: 0;
+   background: rgba(0, 0, 0, 0.60); /* adjust 0.35 for darker/lighter tint */
+   pointer-events: none; /* allows clicks to pass through */
+   z-index: 0;
+ }
+
+ body {
+   position: relative;
+   z-index: 1;
+ }
+
+
+  
