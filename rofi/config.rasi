@@ -1,4 +1,12 @@
 
 //@theme "/home/rius/mydotfiles/rofi/themes/rounded-template.rasi"
 
-@theme "/home/rius/mydotfiles/rofi/themes/rounded-template.rasi"
+//@theme "/home/rius/mydotfiles/rofi/themes/rounded-template.rasi"
+
+//@theme "/home/rius/.config/rofi/themes/mystical-blue-theme.rasi"
+
+//@theme "/home/rius/.config/rofi/themes/rounded-template.rasi"
+
+//@theme "/home/rius/.config/rofi/themes/mystical-blue-theme.rasi"
+
+@theme "/home/rius/.config/rofi/themes/my-minimal-theme.rasi"
