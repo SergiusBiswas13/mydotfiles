@@ -72,8 +72,8 @@ alias i="yay -S --needed"
 alias r="yay -Rns"
 alias s="yay -Ss"
 alias q="yay -Q"
-alias ls="exa -l"
-
+alias ls="eza --icons --group-directories-first -lh"
+alias unrar="unrar x"
 alias gs="git status"
 alias ga="git add"
 alias gc="git commit -m"
@@ -93,8 +93,6 @@ swww() {
 
 
 alias yt='yt-dlp -f "bv*[height<=1080]+ba/b[height<=1080]" -S "vcodec:h264,res,acodec" -o "~/Videos/yt-videos/%(title)s.%(ext)s"'
-
-alias minecraft="flatpak run org.prismlauncher.PrismLauncher & disown"
 
 # Shell integrations
 eval "$(fzf --zsh)"
