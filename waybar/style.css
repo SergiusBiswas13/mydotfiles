@@ -1,76 +1,110 @@
 @import "/home/rius/.config/waybar/waybar.css";
 
+*{
+  font-family: "GeistMono Nerd Font", "Symbols Nerd Font Mono";
+  font-weight: 500;
+  font-size: 16px;
+}
+
 window#waybar {
-  background-color: @background;
+  background: transparent;
   color: @foreground;
-border-bottom: 0px solid @foreground;
-  min-height: 0;
-  font-family: Perun, Adwaita Sans, Symbols Nerd Font Mono;
-font-weight: 400;  
-font-size: 14px;
 }
 
 
-.modules-left {
-  margin-left: 8px;
-}
-
+.modules-left,
 .modules-right {
-  margin-right: 8px;
+  margin: 8px 10px;
 }
 
+
+#custom-arch  {
+    background: @bg-glass;
+    padding: 6px 19px 6px 15px;
+    margin: 0 4px;
+    border-radius: 50px;
+}
+#clock {
+    background: transparent;
+    padding: 6px 12px;
+    margin: 0 4px;
+    border-radius: 50px;
+}
+
+
+#battery  {
+    background: @bg-glass;
+    padding: 6px 12px;
+    margin: 0 4px;
+    border-radius: 50px;
+}
+#network {
+    background: @bg-glass;
+    padding: 6px 12px;
+    margin: 0 4px;
+    border-radius: 50px;
+}
+#pulseaudio  {
+    background: @bg-glass;
+    padding: 6px 12px;
+    margin: 0 4px;
+    border-radius: 50px;
+}
+
+
+#custom-expand-icon {
+    background: @bg-glass;
+    padding: 6px 12px;
+    margin: 0;
+    border-radius: 50px 0 0 50px;
+}
+#tray {
+    background: @bg-glass;
+    padding: 6px 12px;
+    margin: 0;
+    border-radius: 0;
+}
+#bluetooth {
+    background: @bg-glass;
+    padding: 6px 12px;
+    margin: 0;
+    border-radius: 0;
+}
+#custom-spacer {
+    background: @bg-glass;
+    padding: 6px 0 6px 12px;
+    margin: 0 4px 0 0;
+    border-radius: 0 50px 50px 0;
+}
+
+
+#workspaces {
+    background: @bg-glass;
+    padding: 6px 12px;
+    margin: 4px 0;
+    border-radius: 50px;
+}
 #workspaces button {
-  all: initial;
-  padding: 0 6px;
-  margin: 0 1.5px;
-  min-width: 9px;
-  color: @foreground;
+    all: unset;
+    padding: 0 28px;
+    margin: 0 2px;
+    border-radius: 50px;
 }
-
+#workspaces button.active {
+    background: @blue;
+}
 #workspaces button.empty {
   opacity: 0.5;
 }
 
-#tray,
-#cpu,
+
+#clock,
 #battery,
 #network,
-#bluetooth,
 #pulseaudio,
-#custom-mothnixy,
-#custom-screenrecording-indicator,
-#custom-update {
-  min-width: 12px;
-  margin: 0 7.5px;
-}
-
-#custom-expand-icon {
-  margin-right: 7px;
-}
-
-tooltip {
-  padding: 2px;
-}
-
-#custom-update {
-  font-size: 10px;
-}
-
-#clock {
-  margin-left: 8.75px;
-}
-
-.hidden {
-  opacity: 0;
-}
-
-#custom-screenrecording-indicator {
-  min-width: 12px;
-  margin-left: 8.75px;
-  font-size: 10px;
-}
-
-#custom-screenrecording-indicator.active {
-  color: #a55555;
+#custom-arch,
+#workspaces,
+#group-tray-expander {
+    border: 2px solid @border;
 }
 
